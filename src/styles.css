@@ -1,23 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 
+/* Styling Navbar */
 .navbar ul {
-  list-style: none;
   display: flex;
-  justify-content: space-evenly;
-}
-
-a {
-  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navbar a {
   text-decoration: none;
   color: black;
+  padding: auto;
+  margin: auto;
 }
 
-.nav {
+.navbar {
   border-bottom: 1px solid black;
+  padding: 1.5rem;
+}
+
+/* Home Page */
+.home-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+/* Counter */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh 0;
+}
+
+/* Realtime typing */
+.realtime {
+  margin: 10vh 0;
+}
+.realtime a {
+  text-decoration: none;
+  color: blue;
+}
+
+.realtime input {
+  border: 0.5px solid gray;
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem 0.2rem;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 1000rem;
+  padding: 0.5rem 1.5rem;
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
 }
