@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <navbar className="navbar">
+    <div className="navbar">
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -16,11 +16,8 @@ const Navbar = () => {
         <li>
           <Link to="/dynamic">Changing text</Link>
         </li>
-        <li>
-          <Link to="/projects">More Projects</Link>
-        </li>
       </ul>
-    </navbar>
+    </div>
   );
 };
 
