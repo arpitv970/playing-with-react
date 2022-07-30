@@ -16,7 +16,12 @@
   justify-content: space-around;
 }
 
-.navbar a {
+.navbar li a:hover {
+  border-bottom: 1px solid lightslategray;
+  padding-bottom: 0.45rem;
+}
+
+.navbar li a {
   text-decoration: none;
   color: black;
   padding: auto;
