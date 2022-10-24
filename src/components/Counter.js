@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Counter = () => {
   const [num, setNum] = useState(0);
+  useEffect(() => {
+    document.title = `Your count is ${num}`;
+  });
   return (
     <div>
       <h1>Counter</h1>

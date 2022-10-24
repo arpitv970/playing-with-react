@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Name = () => {
   const [name, setName] = useState("...");
+
+  useEffect(() => {
+    document.title = `You have entered: ${name};`;
+  });
   return (
     <div>
       <h1>Real time typing</h1>
